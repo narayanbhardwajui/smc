@@ -110,7 +110,7 @@ body {
 }
 
 .bg-img-hero {
-  background: #ddd url("assests/images/main-banner.jpg") no-repeat top center/cover;
+  background: #ddd url("../images/main-banner.jpg") no-repeat top center/cover;
   background-attachment: fixed;
   position: relative;
   z-index: 1;
@@ -140,12 +140,12 @@ body {
 }
 
 .home__about {
-  background: url("assests/images/backimage.jpg") no-repeat 107% 120px/auto;
+  background: url("../images/backimage.jpg") no-repeat 107% 120px/auto;
 }
 
 .home__about__img {
-  mask-image: url("assests/images/bubbles-3.svg");
-  -webkit-mask-image: url("assests/images/bubbles-3.svg");
+  mask-image: url("../images/bubbles-3.svg");
+  -webkit-mask-image: url("../images/bubbles-3.svg");
   mask-position: center;
   -webkit-mask-position: center;
   mask-repeat: no-repeat;
