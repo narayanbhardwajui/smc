@@ -1,0 +1,184 @@
+/* Carousel base class */
+.carousel-caption {
+  bottom: 5rem;
+  z-index: 10;
+  max-width: 500px;
+  text-align: left;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item:after {
+  content: "";
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.header__top {
+  background: #000 url("/assests/images/header-text.jpg") no-repeat right !important;
+  background-size: contain !important;
+}
+
+.navbar {
+  background: var(--brown);
+}
+
+.nav-item {
+  margin-right: 8px;
+  margin-left: 8px;
+  position: relative;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link::before {
+  content: '';
+  background: url(/assests/images/button.gif) no-repeat center;
+  width: 12px;
+  height: 18px;
+  position: absolute;
+  top: 11px;
+  left: -8px;
+}
+
+.navbar-brand img {
+  max-width: 210px;
+  height: auto;
+}
+
+.footer {
+  background: var(--brown);
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.footer .social li {
+  padding: 3px 0;
+  margin-right: 20px;
+}
+
+.footer .social li svg {
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+}
+
+:root {
+  --golden:#ad9506;
+  --brown: #4c4416;
+}
+
+.text-golden {
+  color: var(--golden);
+}
+
+body {
+  letter-spacing: 0.1px;
+}
+
+.btn-primary {
+  background-color: var(--golden);
+  border-color: var(--golden);
+}
+
+.btn-dark, .bg-dark {
+  background-color: #000 !important;
+}
+
+.spacer {
+  padding: 70px 0;
+}
+
+.bg-img-hero {
+  background: #ddd url(/assests/images/main-banner.jpg) no-repeat top center/cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-img-hero:before {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(21, 27, 38, 0.5)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(21, 27, 38, 0.5) 100%);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.bg-img-hero .form-control, .bg-img-hero .form-select {
+  border: 1px solid #333;
+}
+
+.txt-shdw {
+  text-shadow: 2px 2px #333;
+}
+
+.home__about {
+  background: url(/assests/images/backimage.jpg) no-repeat 107% 120px/auto;
+}
+
+.home__about__img {
+  mask-image: url(/assests/images/bubbles-3.svg);
+  -webkit-mask-image: url(/assests/images/bubbles-3.svg);
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: unset;
+  -webkit-mask-size: unset;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.home__cta {
+  padding: 50px 0;
+}
+
+.home__prog {
+  background-color: #fff;
+  border-top: 10px solid var(--golden);
+  padding: 100px 0;
+}
+
+.home__prog .list-group-item:before {
+  content: '';
+  background: url(/assests/images/icons/arrow-right-short.svg) no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+
+.home__prog .card-body {
+  background: var(--golden);
+  color: #fff;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=main.css.map */

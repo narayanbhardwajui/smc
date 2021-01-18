@@ -1,0 +1,90 @@
+:root {
+    --golden:#ad9506;
+    --brown: #4c4416;
+}
+.text-golden {
+    color: var(--golden);
+}
+body {
+    letter-spacing: 0.1px;
+}
+
+.btn-primary {
+    background-color: var(--golden);
+    border-color: var(--golden);
+}
+.btn-dark,.bg-dark {
+    background-color: #000 !important;
+}
+//spacer
+.spacer {
+    padding: 70px 0;
+}
+//banner
+.bg-img-hero {
+    background: #ddd url(/assests/images/main-banner.jpg) no-repeat top center / cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    &:before {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(21, 27, 38, 0.5) 100%);
+        background-repeat: repeat-x;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: "";
+    }
+    .form-control,.form-select {
+        border: 1px solid #333;
+    }
+}
+.txt-shdw {
+    text-shadow: 2px 2px #333;
+}
+//home-about
+.home__about {
+    background: url(/assests/images/backimage.jpg) no-repeat 107% 120px / auto;
+    &__img {
+        mask-image: url(/assests/images/bubbles-3.svg);
+    -webkit-mask-image: url(/assests/images/bubbles-3.svg);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: unset;
+    -webkit-mask-size: unset;
+    transform: rotate( 0deg );
+    }
+}
+
+//home cta 
+.home__cta {
+    padding: 50px 0;
+    //background: rgba(235, 205, 30, 0.9);
+}
+
+//home program
+.home__prog {
+    background-color: #fff;
+    border-top: 10px solid var(--golden);
+    padding: 100px 0;
+    .list-group-item:before {
+        content: '';
+        background: url(/assests/images/icons/arrow-right-short.svg) no-repeat;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+    }
+    .card-body {
+        background: var(--golden);
+        color: #fff;
+        margin-bottom: 0;
+    }
+}

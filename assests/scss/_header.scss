@@ -1,0 +1,28 @@
+.header__top {
+    background: #000 url('/assests/images/header-text.jpg') no-repeat right !important;
+    background-size: contain !important;
+}
+.navbar {
+    background: var(--brown);
+}
+.nav-item {
+    margin-right: 8px;
+    margin-left: 8px;
+    position: relative;
+}
+.nav-link {
+    color: #fff;
+    &::before {
+        content: '';
+        background: url(/assests/images/button.gif) no-repeat center;
+        width: 12px;
+        height: 18px;
+        position: absolute;
+        top: 11px;
+        left: -8px;
+    }
+}
+.navbar-brand img {
+    max-width: 210px;
+    height: auto;
+}
