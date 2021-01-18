@@ -29,7 +29,7 @@
 }
 
 .header__top {
-  background: #000 url("/assests/images/header-text.jpg") no-repeat right !important;
+  background: #000 url("assests/images/header-text.jpg") no-repeat right !important;
   background-size: contain !important;
 }
 
@@ -49,7 +49,7 @@
 
 .nav-link::before {
   content: '';
-  background: url(/assests/images/button.gif) no-repeat center;
+  background: url("assests/images/button.gif") no-repeat center;
   width: 12px;
   height: 18px;
   position: absolute;
@@ -110,7 +110,7 @@ body {
 }
 
 .bg-img-hero {
-  background: #ddd url(/assests/images/main-banner.jpg) no-repeat top center/cover;
+  background: #ddd url("assests/images/main-banner.jpg") no-repeat top center/cover;
   background-attachment: fixed;
   position: relative;
   z-index: 1;
@@ -140,12 +140,12 @@ body {
 }
 
 .home__about {
-  background: url(/assests/images/backimage.jpg) no-repeat 107% 120px/auto;
+  background: url("assests/images/backimage.jpg") no-repeat 107% 120px/auto;
 }
 
 .home__about__img {
-  mask-image: url(/assests/images/bubbles-3.svg);
-  -webkit-mask-image: url(/assests/images/bubbles-3.svg);
+  mask-image: url("assests/images/bubbles-3.svg");
+  -webkit-mask-image: url("assests/images/bubbles-3.svg");
   mask-position: center;
   -webkit-mask-position: center;
   mask-repeat: no-repeat;
@@ -168,7 +168,7 @@ body {
 
 .home__prog .list-group-item:before {
   content: '';
-  background: url(/assests/images/icons/arrow-right-short.svg) no-repeat;
+  background: url("assests/images/icons/arrow-right-short.svg") no-repeat;
   width: 18px;
   height: 18px;
   display: inline-block;
