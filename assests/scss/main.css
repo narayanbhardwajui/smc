@@ -29,7 +29,7 @@
 }
 
 .header__top {
-  background: #000 url("assests/images/header-text.jpg") no-repeat right !important;
+  background: #000 url("../images/header-text.jpg") no-repeat right !important;
   background-size: contain !important;
 }
 
@@ -49,7 +49,7 @@
 
 .nav-link::before {
   content: '';
-  background: url("assests/images/button.gif") no-repeat center;
+  background: url("../images/button.gif") no-repeat center;
   width: 12px;
   height: 18px;
   position: absolute;
@@ -168,7 +168,7 @@ body {
 
 .home__prog .list-group-item:before {
   content: '';
-  background: url("assests/images/icons/arrow-right-short.svg") no-repeat;
+  background: url("../images/icons/arrow-right-short.svg") no-repeat;
   width: 18px;
   height: 18px;
   display: inline-block;
