@@ -1,9 +1,15 @@
-.header__top {
+.header__top { 
     background: #000 url('../images/header-text.jpg') no-repeat right !important;
     background-size: contain !important;
 }
 .navbar {
-    background: var(--brown);
+    background: var(--golden);
+    .dropdown-menu {
+        background: var(--golden);
+        .nav-link:before {
+            content: none;
+        }
+    }
 }
 .nav-item {
     margin-right: 8px;
@@ -11,7 +17,8 @@
     position: relative;
 }
 .nav-link {
-    color: #fff;
+    color: #000;
+    font-size: 15px;
     &::before {
         content: '';
         background: url('../images/button.gif') no-repeat center;
@@ -21,8 +28,7 @@
         top: 11px;
         left: -8px;
     }
-}
-.navbar-brand img {
-    max-width: 210px;
-    height: auto;
+    &:hover {
+        color: rgba(255,255,255,0.6);
+    }
 }
