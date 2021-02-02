@@ -154,6 +154,13 @@ body {
   font-size: 40px;
 }
 
+.music-icon {
+  background: url(../images/icons/music-note-list.svg) no-repeat center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
 .spacer {
   padding: 90px 0;
 }
@@ -351,5 +358,27 @@ body {
   color: #000;
   margin-bottom: 60px;
   padding: 0 30px;
+}
+
+.bg-section {
+  background: #000 url("../images/main-banner.jpg") no-repeat center/cover;
+  height: 140px;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-section:after {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(21, 27, 38, 0.5)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(21, 27, 38, 0.5) 100%);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
 }
 /*# sourceMappingURL=main.css.map */
