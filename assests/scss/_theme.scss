@@ -219,7 +219,7 @@ body {
 //header banner
 .bg-section {
     background: #000 url('../images/main-banner.jpg') no-repeat center / cover;
-    height: 140px;
+    height: 340px;
     position: relative;
     z-index: 1;
     &:after {
@@ -235,5 +235,11 @@ body {
         height: 100%;
         content: "";
     }
+}
+//music card
+.indian_music .card img{
+    display: block;
+    width:64px;
+    margin:0 auto 10px;
 }
 
