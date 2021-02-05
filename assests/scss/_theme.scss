@@ -1,6 +1,8 @@
 :root {
     --golden:#ad9506;
     --brown: #4c4416;
+    --offGreen:#80bdab;
+    --orange: #b35c23;
     --fm: 'Libre Baskerville';
 }
 .text-golden {
@@ -11,6 +13,15 @@
 }
 .no-border{
     border:none;
+}
+.bg-golden{
+    background: var(--golden);
+}
+.bg-offgreen{
+    background: var(--offGreen);
+}
+.bg-orange{
+    background: var(--orange);
 }
 body {
     letter-spacing: 0.1px;
@@ -245,4 +256,8 @@ body {
     width:64px;
     margin:0 auto 10px;
 }
-
+//modal
+.modal.show .modal-dialog
+{
+    font-size: .9rem;
+}
