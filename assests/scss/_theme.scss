@@ -5,6 +5,9 @@
     --orange: #b35c23;
     --fm: 'Libre Baskerville';
 }
+html, body{
+    width:100%;
+}
 .text-golden {
     color: var(--golden);
 }
@@ -261,3 +264,58 @@ body {
 {
     font-size: .9rem;
 }
+//contact us
+.contact-form_section{
+    background: #0e0e0e;
+}
+.contact-title{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.form-control{
+    width: 100%;
+    min-height: 56px;
+    padding: 3px 20px;
+    color: #696969;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    outline: 0;
+    background-color: #f5f5f5;
+}
+.form-control:focus{
+    outline:0;
+    border-color: var(--golden);
+    background-color: #fff;
+    box-shadow: none;
+}
+.contact-info{
+    text-align: center;
+    position: relative;
+}
+.contact-info .info{
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--golden);
+    padding: 35px 0 10px 0;
+    min-height: 170px;
+    margin-top: -25px;
+}
+.contact-info .title{
+    color: var(--golden);
+    font-weight: bold;
+}
+.contact-info .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--golden);
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
