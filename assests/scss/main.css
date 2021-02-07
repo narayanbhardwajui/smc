@@ -481,4 +481,42 @@ body {
   z-index: 1;
   margin: 0 auto;
 }
+
+/*gallery page*/
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+}
+
+.gallery .gallery-item {
+  border: 1px solid var(--golden);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.gallery img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 211px;
+}
+
+/*ipad*/
+@media screen and (max-width: 1024px) {
+  .gallery {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
 /*# sourceMappingURL=main.css.map */
