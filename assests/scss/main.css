@@ -486,8 +486,8 @@ body {
 .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
 }
 
@@ -499,17 +499,30 @@ body {
   overflow: hidden;
 }
 
+.gallery .gallery-item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .gallery img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 211px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.gallery-event_section .gallery .gallery-item {
+  border-color: #000;
 }
 
 /*ipad*/
 @media screen and (max-width: 1024px) {
   .gallery {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
