@@ -541,14 +541,14 @@ body {
 }
 
 .arrow-list li {
-  background: url(/assests/images/right-arrow.png) 0px 3px no-repeat;
+  background: url(../images/right-arrow.png) 0px 3px no-repeat;
   padding: 0px 0 10px 33px;
   list-style: none;
   margin-bottom: 10px;
 }
 
 .navbar-toggler-icon {
-  background: url(assests/images/menu.png) no-repeat center/0px 1px;
+  background: url(../images/menu.png) no-repeat center/0px 1px;
 }
 
 /*ipad*/
