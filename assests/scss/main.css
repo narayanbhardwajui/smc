@@ -299,9 +299,8 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 50%;
-  max-width: 120px;
-  max-height: 120px;
-  height: 100%;
+  width: 120px;
+  height: 120px;
 }
 
 .home__gen .list-group-item:before {
@@ -352,7 +351,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-right: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
   margin-bottom: 1rem;
   height: 220px;
 }
@@ -451,14 +451,12 @@ body {
 .contact-info {
   text-align: center;
   position: relative;
+  border: 1px solid var(--golden);
 }
 
 .contact-info .info {
   background: rgba(0, 0, 0, 0.04);
-  border: 1px solid var(--golden);
-  padding: 35px 0 10px 0;
-  min-height: 170px;
-  margin-top: -25px;
+  padding: 15px 0;
 }
 
 .contact-info .title {
@@ -484,6 +482,7 @@ body {
   position: relative;
   z-index: 1;
   margin: 0 auto;
+  margin-top: -70px;
 }
 
 /*gallery page*/
@@ -508,7 +507,7 @@ body {
           transform: scale(1.1);
 }
 
-.gallery img {
+.gallery .gallery-item img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 211px;
@@ -548,18 +547,77 @@ body {
   margin-bottom: 10px;
 }
 
+.navbar-toggler-icon {
+  background: url(/assests/images/menu.png) 0px 1px no-repeat;
+}
+
 /*ipad*/
 @media screen and (max-width: 1024px) {
   .gallery {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  .home__about img {
+    width: 80%;
+    min-height: 290px;
+    max-height: 290px;
+  }
+}
+
+/*ipad small*/
+@media screen and (max-width: 991px) {
+  .sm-mb-1 {
+    margin-bottom: 1rem;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 1rem;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .arrow-list {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .xs-mb-1 {
+    margin-bottom: 1rem;
+  }
+  .xs-center {
+    text-align: center;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
   .gallery {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-info_section .col-sm-4 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .contact-info .icon {
+    margin-top: 15px;
+  }
+  .spacer {
+    padding: 30px 0;
+  }
+  .main-title {
+    font-size: 23px;
+  }
+  .home__about img {
+    width: 80%;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .home__about img + img {
+    margin: -250px -100px 0px 70px;
+  }
+  .home__gen .card img {
+    margin: 10px auto 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
