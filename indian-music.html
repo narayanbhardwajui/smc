@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="assests/css/bootstrap.min.css" rel="stylesheet">
     <link href="assests/scss/main.css" rel="stylesheet">
+    <link href="assests/css/aos.css" rel="stylesheet">
 
     <title>Indian Music Page</title>
 </head>
@@ -107,7 +108,7 @@
     <section class="indian_music spacer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 xs-mb-1">
+                <div class="col-md-4 xs-mb-1" data-aos="flip-left">
                     <div class="card bg-orange text-dark h-100">
                         <div class="card-header h3 text-center">
                         <img src="assests/images/indian-music-2.png" alt="">
@@ -122,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 xs-mb-1">
+                <div class="col-md-4 xs-mb-1" data-aos="flip-right">
                     <div class="card bg-golden text-dark h-100">
                         <div class="card-header h3 text-center">
                         <img src="assests/images/western-music.png" alt="">
@@ -136,11 +137,11 @@
                             <p class="card-text mb-2 d-flex align-items-start"><i class="music-icon me-1"></i>Saxophone, Mouth Organ</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#vocalModal">View Fees</a>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#instrumentalModal">View Fees</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-left">
                     <div class="card bg-orange text-dark h-100">
                         <div class="card-header h3 text-center">
                             <img src="assests/images/music.png" alt="">
@@ -151,7 +152,7 @@
                             <p class="card-text mb-2 d-flex align-items-start"><i class="music-icon me-1"></i>Classical Dance, Kathak, Folk</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#vocalModal">View Fees</a>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#musicModal">View Fees</a>
                         </div>
                     </div>
                 </div>
@@ -239,61 +240,61 @@
                         <td>7000</td>
 
                     </tr>
-<tr>
-    <td>3rd year</td>
-   <td>N/A</td>
+                    <tr>
+                        <td>3rd year</td>
+                    <td>N/A</td>
 
-     <td>3200</td>
+                        <td>3200</td>
 
-     <td>4200</td>
+                        <td>4200</td>
 
-     <td>5200</td>
+                        <td>5200</td>
 
-     <td>6200</td>
+                        <td>6200</td>
 
-     <td>7200</td>
+                        <td>7200</td>
 
-</tr>
- <tr>
-    <td>Madhyama (Sen. Dip.)  4th year</td>
-   <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Madhyama (Sen. Dip.)  4th year</td>
+                    <td>N/A</td>
 
-     <td>N/A</td>
+                        <td>N/A</td>
 
-     <td>4400</td>
+                        <td>4400</td>
 
-     <td>5400</td>
+                        <td>5400</td>
 
-     <td>6400</td>
+                        <td>6400</td>
 
-     <td>7400</td>
+                        <td>7400</td>
 
- </tr>
-<tr>
-    <td>5th year</td>
-   <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>5th year</td>
+                    <td>N/A</td>
 
-      <td>N/A</td>
+                        <td>N/A</td>
 
-      <td>N/A</td>
+                        <td>N/A</td>
 
-      <td>5600</td>
+                        <td>5600</td>
 
-      <td>6600</td>
+                        <td>6600</td>
 
-      <td>7600</td>
-</tr>
- <tr>
-    <td>Sangeet prabhakar (B.Music) 6th year</td>
-   <td>N/A</td>
-   <td>N/A</td>
-    <td>N/A</td>
-    <td>6000</td>
+                        <td>7600</td>
+                    </tr>
+                    <tr>
+                        <td>Sangeet prabhakar (B.Music) 6th year</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                        <td>N/A</td>
+                        <td>6000</td>
 
-      <td>7000</td>
+                        <td>7000</td>
 
-      <td>8000</td>
- </tr>
+                        <td>8000</td>
+                    </tr>
                 </tbody>
 
                 </table>
@@ -309,32 +310,68 @@
   </div>
   <!-- vocal Modal -->
 
-    <!-- vocal classical Modal -->
-    <div class="modal fade" id="vocalclassModal" tabindex="-1" aria-labelledby="vocalclassModal" aria-hidden="true">
+<!-- Instrumental Music Modal -->
+    <div class="modal fade" id="instrumentalModal" tabindex="-1" aria-labelledby="vocalclassModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-dark" id="exampleModalLabel">Vocal Music - Fee Structure</h5>
+              <h5 class="modal-title text-dark" id="exampleModalLabel">Instrumental Music - Fee Structure</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div>
-                    <h5 class="fw-bold text-golden">Vocal Music</h5>
+                    <h5 class="fw-bold text-golden">Western Music</h5>
                     <table class="table table-bordered table-warning">
                         <thead>
                       <tr>
                         <th scope="col">Course Name</th>
+                        <th scope="col">Once a week</th>
                         <th scope="col">Twice a week</th>
                         <th scope="col">Thrice a week</th>
-                        <th scope="col">Four times a week</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>( Light - Songs,Gazals and Bhajans )</td>
+                        <td>Piano</td>
+                        <td>3000</td>
+                        <td>5000</td>
+                        <td>7000</td>
+                      </tr>
+                      <tr>
+                        <td>Saxophone</td>
+                        <td>3000</td>
+                        <td>5000</td>
+                        <td>7000</td>
+                      </tr>
+                      <tr>
+                        <td>Western Guitar (Acoustic)</td>
                         <td>2400</td>
-                        <td>3400</td>
-                        <td>4400</td>
+                        <td>4000</td>
+                        <td>6000</td>
+                      </tr>
+                      <tr>
+                        <td>Guitar (Electric/Bass)</td>
+                        <td>3000</td>
+                        <td>5000</td>
+                        <td>7000</td>
+                      </tr>
+                      <tr>
+                        <td>Western Drums</td>
+                        <td>2400</td>
+                        <td>4000</td>
+                        <td>6000</td>
+                      </tr>
+                      <tr>
+                        <td>Congo</td>
+                        <td>2400</td>
+                        <td>4000</td>
+                        <td>6000</td>
+                      </tr>
+                      <tr>
+                        <td>Western Keyboards</td>
+                        <td>2400</td>
+                        <td>4000</td>
+                        <td>6000</td>
                       </tr>
                     </tbody>
 
@@ -349,11 +386,94 @@
           </div>
         </div>
       </div>
-    <!-- vocal classical Modal -->
+    <!-- Instrumental Music Modal -->
+    <!-- Music Modal -->
+    <div class="modal fade" id="musicModal" tabindex="-1" aria-labelledby="vocalclassModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">Music - Fee Structure</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h5 class="fw-bold text-golden">Music</h5>
+                    <table class="table table-bordered table-warning">
+                        <thead>
+                      <tr>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Once a week</th>
+                        <th scope="col">Twice a week</th>
+                        <th scope="col">Thrice a week</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Violin (Indian light & Classical Music)</td>
+                        <td>2400</td>
+                        <td>4000</td>
+                        <td>6000</td>
+                      </tr>
+                      <tr>
+                        <td>Flute (Indian light & Classical Music)</td>
+                        <td>2400</td>
+                        <td>4000</td>
+                        <td>6000</td>
+                      </tr>
+                      <tr>
+                        <td>Tabla</td>
+                        <td>2000</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                      </tr>
+                      <tr>
+                        <td>Dhol</td>
+                        <td>2400</td>
+                        <td>4000</td>
+                        <td>6000</td>
+                      </tr>
+                      <tr>
+                        <td>Dholak</td>
+                        <td>2000</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                      </tr>
+                      <tr>
+                        <td>Congo</td>
+                        <td>2400</td>
+                        <td>4000</td>
+                        <td>6000</td>
+                      </tr>
+                      <tr>
+                        <td>Harmonium</td>
+                        <td>2000</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                      </tr>
+                       <tr>
+                        <td>Naal</td>
+                        <td>2000</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                      </tr>
+                    </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Apply for course</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Music Modal -->
     <!--cta-->
     <section class="home__cta bg-dark text-white spacer">
         <div class="container">
-            <div class="row d-flex flex-wrap justify-content-between align-items-center text-center">
+            <div class="row d-flex flex-wrap justify-content-between align-items-center text-center" overflow-hide data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="cta-contents">
                     <h2 class="cta-title main-title display-6 text-golden">Admission Open for 2021</h2>
                     <p class="cta-desc text-golden">
@@ -459,7 +579,11 @@
 	</footer>
     <!--footer-->
 
-    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <script src="assests/js/bootstrap.bundle.min.js"></script>    
+    <script src="assests/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

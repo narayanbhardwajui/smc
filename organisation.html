@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="assests/css/bootstrap.min.css" rel="stylesheet">
     <link href="assests/scss/main.css" rel="stylesheet">
-    <link href="assests/css/fancybox.min.css" rel="stylesheet">
+    <link href="assests/css/aos.css" rel="stylesheet">
 
     <title>Organisation Page</title>
 </head>
@@ -99,19 +99,19 @@
     <!--Organisation-->
     <section class="organisation_section spacer">
         <div class="container"> 
-            <div class="row align-items-center mb-5">
+            <div class="row align-items-center mb-5" data-aos="fade-down">
                 <div class="col-sm-6">
                     <h2 class="text-uppercase display-5 mb-3 fw-bold text-golden main-title">The Organisation</h2>
                     <p class="mb-4">Saraswati Music College was established in 1924 at Lahore by it's founder Principal, Late Shri Bansilal Kapoor, disciple of the veteran musician, Late Pandit Maniram ji of Mewati Gharana. The institution moved to Delhi after partition
                         The institution is one of the oldest and among the most reputed ones in the field.It is run by a registered Society, a non-profit earning body. It has been providing training in Hindustani and Western Music, Indian Dances, Arts and Crafts.It is affiliated to Prayag Sangeet Samiti, Allahabad and conducts examinations upto MA(Music)</p>
                 </div>
                 <div class="col-sm-6">
-                    <img src="assests/images/main-banner-2.jpg" class="img-fluid mb-2" alt="Image">
+                    <img src="assests/images/org1.jpg" class="img-fluid mb-2" alt="Image">
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center" data-aos="fade-up">
                 <div class="col-sm-6 xs-mb-1">
-                    <img src="assests/images/gallery/3.jpg" class="img-fluid mb-2" alt="Image">
+                    <img src="assests/images/org2.jpg" class="img-fluid mb-2" alt="Image">
                 </div>
                 <div class="col-sm-6">
                     <h2 class="text-uppercase display-5 mb-3 fw-bold text-golden main-title">A Quiet Evolution</h2>
@@ -123,9 +123,9 @@
     </section>
 
     <!--Gallery-->
-    <section class="gallery-dance_section bg-light spacer">
+    <section class="alumni_section bg-light spacer">
         <div class="container"> 
-            <div class="row"> 
+            <div class="row" data-aos="zoom-in"> 
                 <div class="col-12 mb-5">
                     <h2 class="cta-title main-title display-6 text-golden mb-4 text-center">Our Alumni</h2>
                     <div class="text-dark text-center mt-2">
@@ -133,7 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row px-1">
+            <div class="row px-1" data-aos="fade-up">
                 <div class="col-sm-8 offset-sm-2 alumini-wrap">
                    <div class="row">
                       <div class="col-6 d-flex flex-wrap">
@@ -151,9 +151,9 @@
              </div>
         </div>
     </section>
-    <section class="gallery-event_section bg-golden spacer">
+    <section class="event_section bg-golden spacer" id="event-block">
         <div class="container">  
-            <div class="row"> 
+            <div class="row" data-aos="fade-up"> 
                 <div class="col-12 mb-5">
                     <h2 class="text-uppercase display-5 mb-3 fw-bold  main-title text-center mb-5" style="color: black;">Events</h2>
                     <div class="text-dark mt-2">
@@ -187,7 +187,7 @@
     <!--cta-->
     <section class="home__cta bg-dark text-white spacer">
         <div class="container">
-            <div class="row d-flex flex-wrap justify-content-between align-items-center text-center">
+            <div class="row d-flex flex-wrap justify-content-between align-items-center text-center" overflow-hide data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="cta-contents">
                     <h2 class="cta-title main-title display-6 text-golden">Admission Open for 2021</h2>
                     <p class="cta-desc text-golden">
@@ -292,22 +292,10 @@
 		</div>
 	</footer>
     <!--footer-->
-    <script src="assests/js/jquery-3.4.1.min.js"></script>
-    <script src="assests/js/bootstrap.bundle.min.js"></script>
-    <script src="assests/js/fancybox.min.js"></script>
+    <script src="assests/js/bootstrap.bundle.min.js"></script>    
+    <script src="assests/js/aos.js"></script>
     <script>
-        $(document).ready(function() {
-            // add all to same gallery
-            $(".gallery a").attr("data-fancybox","mygallery");
-            // assign captions and title from alt-attributes of images:
-            $(".gallery a").each(function(){
-              $(this).attr("data-caption", $(this).find("img").attr("alt"));
-              $(this).attr("title", $(this).find("img").attr("alt"));
-            });
-            // start fancybox:
-              $(".gallery a").fancybox();
-          });
-          
+        AOS.init();
     </script>
 </body>
 
