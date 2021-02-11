@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="assests/css/bootstrap.min.css" rel="stylesheet">
     <link href="assests/scss/main.css" rel="stylesheet">
+    <link href="assests/css/aos.css" rel="stylesheet">
 
     <title>Contact Us Page</title>
 </head>
@@ -99,7 +100,7 @@
     <section class="contact-form_section spacer">
         <div class="container">
             <div class="row">
-                <div class="offset-lg-2 col-lg-8">
+                <div class="offset-lg-2 col-lg-8" overflow-hide data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <div class="contact-title max-width-600">
                         <h2 class="main-title text-golden">For Online Music Classes Book Now</h2>
                     </div>
@@ -150,7 +151,12 @@
                                     <textarea class="form-control" placeholder="Enter Your Mobile No." name="address" rows="3"></textarea>
                                 </div>
                             </div>
-                              <div class="row">
+                            <div class="row">
+                                <div class="col-sm-6 mb-2">
+                                    <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -175,7 +181,7 @@
     <section class="contact-info_section spacer">
         <div class="container">
             <div class="row">
-               <div class="col-sm-4">
+               <div class="col-sm-4" data-aos="flip-left">
                <div class="contact-info h-100">
                     <div class="icon">
                         <img src="./assests/images/pin.png" alt="Location">
@@ -186,7 +192,7 @@
                     </div>
                 </div>
                </div>
-               <div class="col-sm-4">
+               <div class="col-sm-4" data-aos="flip-right">
                     <div class="contact-info h-100">
                         <div class="icon">
                             <img src="./assests/images/call.png" alt="Phone">
@@ -202,7 +208,7 @@
                         </div>
                     </div>
                </div>
-               <div class="col-sm-4">
+               <div class="col-sm-4" data-aos="flip-left">
                     <div class="contact-info h-100">
                         <div class="icon">
                             <img src="./assests/images/email.png" alt="Email">
@@ -221,7 +227,7 @@
     <section class="map_section spacer">
         <div class="container">
             <div class="row">
-               <div class="col">
+               <div class="col" data-aos="zoom-in">
                    <div class=""><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3504.08175308674!2d77.19523731549425!3d28.567307693779906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x390ce278fe07d571%3A0xe5f8723b2ef64e91!2sSaraswati%20Music%20College%2C%20A-1%2F226%2C%20Safdarjung%20Enclave%2C%20Block%20A%201%2C%20Nauroji%20Nagar%2C%20Safdarjung%20Enclave%2C%20New%20Delhi%2C%20Delhi%2029!3m2!1d28.567303!2d77.197426!5e0!3m2!1sen!2sin!4v1612596540687!5m2!1sen!2sin" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
                </div>
             </div>
@@ -232,7 +238,7 @@
     <!--cta-->
     <section class="home__cta bg-dark text-white spacer">
         <div class="container">
-            <div class="row d-flex flex-wrap justify-content-between align-items-center text-center">
+            <div class="row d-flex flex-wrap justify-content-between align-items-center text-center" overflow-hide data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="cta-contents">
                     <h2 class="cta-title main-title display-6 text-golden">Admission Open for 2021</h2>
                     <p class="cta-desc text-golden">
@@ -240,7 +246,7 @@
                     </p>
                 </div>
                 <div class="cta-button">
-                    <a href="#" class="btn btn-lg  btn-primary">Call Now</a>
+                    <a href="tel:011-26167911" class="btn btn-lg  btn-primary">Call Now</a>
                 </div>
             </div>
          </div>
@@ -339,6 +345,11 @@
     <!--footer-->
 
     <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="assests/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

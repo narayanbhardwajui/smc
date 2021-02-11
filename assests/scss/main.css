@@ -7,7 +7,7 @@
 }
 
 .carousel-item {
-  height: 32rem;
+  height: 40rem;
 }
 
 .carousel-item:after {
@@ -25,7 +25,7 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  height: 40rem;
 }
 
 .header__top {
@@ -149,6 +149,10 @@ html, body {
 
 .bg-orange {
   background: var(--orange);
+}
+
+.overflow-hide {
+  overflow: hidden;
 }
 
 body {
