@@ -1,21 +1,41 @@
 .header__top {
-    background: #000 url('../images/header-text.jpg') no-repeat right !important;
-    background-size: contain !important;
+    background: #000 url('../images/header.gif') no-repeat right !important;
+    background-size: 100% !important;
+    min-height: 125px;
+    @media screen and (max-width: 767px) {
+        min-height: 70px;
+    }
 }
+
 .navbar {
     background: var(--golden);
     .dropdown-menu {
         background: var(--golden);
+        li {
+            border-bottom: 1px solid rgba(0, 0, 0, .15);
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            border: none;
+            margin-top: 0;
+        }
         .nav-link:before {
             content: none;
         }
     }
 }
+
 .nav-item {
     margin-right: 8px;
     margin-left: 8px;
     position: relative;
+    @media screen and (max-width: 767px) {
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+    }
 }
+
 .nav-link {
     color: #000;
     font-size: 15px;
@@ -29,6 +49,6 @@
         left: -8px;
     }
     &:hover {
-        color: rgba(255,255,255,0.6);
+        color: rgba(255, 255, 255, 0.6);
     }
 }
